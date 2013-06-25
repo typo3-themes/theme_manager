@@ -1,0 +1,24 @@
+{
+	"faq": [
+		{
+			"title": "How to download a theme?",
+			"description": "bla bla"
+		},
+		{
+			"title": "How to upload a theme?",
+			"description": "bla bla"
+		}
+	],
+	"remote": [
+		{
+			"url": "http://themes.typo3.org/feed1",
+			"description": "Lorem Ipsum",
+			"faq": [
+				{
+					"title": "What do after installing a theme?",
+					"description": "bla bla"
+				}
+			]
+		}
+	]
+}

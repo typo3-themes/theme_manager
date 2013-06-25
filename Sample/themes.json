@@ -1,0 +1,34 @@
+[
+	{
+		"name": "Amelia",
+		"extensionName": "foo",
+		"thumbnail": [
+			{
+				"file": "screenshot1.png",
+				"caption": "lorem ipsum",
+			},
+			{
+				"file": "screenshot2.png",
+				"caption": "lorem ipsum",
+			}
+		],
+		"keywords": [
+			"html5boilerplate",
+			"responsive design"
+		],
+		"author": [
+			{
+				"name": "Fabien Udriot",
+				"email": "fabien.udriot@ecodev.ch"
+			},
+			{
+				"name": "Kay Strobach",
+				"email": "typo3themes@kay-strobach.de"
+			}
+		],
+		"license": "CC BY 3.0",
+		"licenseUrl": "http://creativecommons.org/licenses/by/3.0/",
+		"demoUrl": "http://example.com",
+		"votes": 4
+	}
+]
