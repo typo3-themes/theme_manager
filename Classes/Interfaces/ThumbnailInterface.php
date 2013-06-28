@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3\CMS\ThemesManager\Domain\Repository;
+namespace TYPO3\CMS\ThemesManager\Interfaces;
 
 /***************************************************************
  *  Copyright notice
@@ -25,11 +25,28 @@ namespace TYPO3\CMS\ThemesManager\Domain\Repository;
  ***************************************************************/
 
 /**
- * Theme Repository
+ * Interface for thumbnail
  */
-class ThemeRepository implements \TYPO3\CMS\ThemesManager\Interfaces\ThemeRepositoryInterface {
+interface ThumbnailInterface {
 
-	// @todo
+	/**
+	 * @return string
+	 */
+	public function getFile();
 
+	/**
+	 * @param string $file
+	 */
+	public function setFile($file);
+
+	/**
+	 * @return string
+	 */
+	public function getCaption();
+
+	/**
+	 * @param string $caption
+	 */
+	public function setCaption($caption);
 }
 ?>

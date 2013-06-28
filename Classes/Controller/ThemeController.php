@@ -29,10 +29,59 @@ namespace TYPO3\CMS\ThemesManager\Controller;
 class ThemeController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
 
 	/**
+	 * @var \TYPO3\CMS\ThemesManager\Interfaces\ThemeRepositoryInterface
+	 */
+	protected $themeRepository;
+
+	/**
+	 * Initialize default action
+	 */
+	public function initializeAction() {
+		$this->themeRepository = NULL; // @todo implement me
+	}
+	/**
 	 * @return void
 	 */
 	public function indexAction() {
+		$this->view->assign('themes', $this->themeRepository->findAll());
+	}
 
+	/**
+	 * @param string $identifier
+	 * @return string
+	 */
+	public function downloadAction($identifier) {
+		$theme = $this->themeRepository->findByIdentifier($identifier);
+		$result = $theme->download();
+	}
+
+	/**
+	 * @param string $identifier
+	 * @return string
+	 */
+	public function installAction($identifier) {
+		$theme = $this->themeRepository->findByIdentifier($identifier);
+		$result = $theme->install();
+
+	}
+
+	/**
+	 * @param string $identifier
+	 * @return void
+	 */
+	public function unInstallAction($identifier) {
+		$theme = $this->themeRepository->findByIdentifier($identifier);
+		$result = $theme->unInstall();
+
+	}
+
+	/**
+	 * @param string $identifier
+	 * @return void
+	 */
+	public function eraseAction($identifier) {
+		$theme = $this->themeRepository->findByIdentifier($identifier);
+		$result = $theme->erase();
 	}
 }
 ?>

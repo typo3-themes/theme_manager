@@ -27,6 +27,8 @@ namespace TYPO3\CMS\ThemesManager\Domain\Model;
 /**
  * Theme model
  */
-class Theme extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
+class Theme implements \TYPO3\CMS\ThemesManager\Interfaces\ThemeInterface {
+
+	// @todo
 }
 ?>

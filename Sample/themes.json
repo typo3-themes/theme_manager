@@ -1,7 +1,7 @@
 [
 	{
-		"name": "Amelia",
-		"extensionName": "foo",
+		"identifier": "foo",
+		"title": "Amelia",
 		"thumbnail": [
 			{
 				"file": "screenshot1.png",
@@ -16,19 +16,25 @@
 			"html5boilerplate",
 			"responsive design"
 		],
-		"author": [
+		"authors": [
 			{
-				"name": "Fabien Udriot",
-				"email": "fabien.udriot@ecodev.ch"
+				"name": "John Doe",
+				"email": "john@doe.com"
 			},
 			{
-				"name": "Kay Strobach",
-				"email": "typo3themes@kay-strobach.de"
+				"name": "Jane Doe",
+				"email": "jane@doe.com"
 			}
 		],
-		"license": "CC BY 3.0",
-		"licenseUrl": "http://creativecommons.org/licenses/by/3.0/",
-		"demoUrl": "http://example.com",
-		"votes": 4
+		"license": {
+			"name": "CC BY 3.0",
+			"url": "http://creativecommons.org/licenses/by/3.0/"
+		},
+		"demo": "http://example.com",
+		"votes": 124,
+		"dependencies": [
+			"foo",
+			"bar",
+		]
 	}
 ]

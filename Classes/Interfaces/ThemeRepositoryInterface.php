@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3\CMS\ThemesManager\Domain\Repository;
+namespace TYPO3\CMS\ThemesManager\Interfaces;
 
 /***************************************************************
  *  Copyright notice
@@ -25,11 +25,38 @@ namespace TYPO3\CMS\ThemesManager\Domain\Repository;
  ***************************************************************/
 
 /**
- * Theme Repository
+ * Interface for theme repository
  */
-class ThemeRepository implements \TYPO3\CMS\ThemesManager\Interfaces\ThemeRepositoryInterface {
+interface ThemeRepositoryInterface {
 
-	// @todo
+	/**
+	 * Find a theme given an identifier.
+	 *
+	 * @param string $identifier
+	 * @return \TYPO3\CMS\ThemesManager\Interfaces\ThemeInterface
+	 */
+	public function findByIdentifier($identifier);
+
+	/**
+	 * Find all themes regardless of their status. Possible status can be downloaded, installed, etc...
+	 *
+	 * @return \TYPO3\CMS\ThemesManager\Interfaces\ThemeInterface[]
+	 */
+	public function findAll();
+
+	/**
+	 * Find all installed themes on the system.
+	 *
+	 * @return \TYPO3\CMS\ThemesManager\Interfaces\ThemeInterface[]
+	 */
+	public function findInstalled();
+
+	/**
+	 * Find all downloaded themes on the system regardless if they are installed or not.
+	 *
+	 * @return \TYPO3\CMS\ThemesManager\Interfaces\ThemeInterface[]
+	 */
+	public function findDownloaded();
 
 }
 ?>

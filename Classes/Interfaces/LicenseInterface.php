@@ -1,5 +1,5 @@
 <?php
-namespace TYPO3\CMS\ThemesManager\Domain\Repository;
+namespace TYPO3\CMS\ThemesManager\Interfaces;
 
 /***************************************************************
  *  Copyright notice
@@ -25,11 +25,28 @@ namespace TYPO3\CMS\ThemesManager\Domain\Repository;
  ***************************************************************/
 
 /**
- * Theme Repository
+ * Interface for author
  */
-class ThemeRepository implements \TYPO3\CMS\ThemesManager\Interfaces\ThemeRepositoryInterface {
+interface LicenseInterface {
 
-	// @todo
+	/**
+	 * @return string
+	 */
+	public function getName();
 
+	/**
+	 * @param string $name
+	 */
+	public function setName($name);
+
+	/**
+	 * @return string
+	 */
+	public function getUrl();
+
+	/**
+	 * @param string $url
+	 */
+	public function setUrl($url);
 }
 ?>
