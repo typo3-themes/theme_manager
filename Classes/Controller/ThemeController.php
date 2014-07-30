@@ -37,7 +37,7 @@ class ThemeController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 	 * Initialize default action
 	 */
 	public function initializeAction() {
-		$this->themeRepository = NULL; // @todo implement me
+		$this->themeRepository = new \TYPO3\CMS\ThemesManager\Domain\Repository\ThemeRepository();
 	}
 	/**
 	 * @return void
