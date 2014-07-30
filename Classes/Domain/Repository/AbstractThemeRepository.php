@@ -37,7 +37,8 @@ abstract class AbstractThemeRepository implements \TYPO3\CMS\ThemesManager\Inter
 	abstract public function findByIdentifier($identifier);
 
 	/**
-	 * Find all themes regardless of their status. Possible status can be downloaded, installed, etc...
+	 * Find all themes regardless of their status. Possible status can be
+	 * downloaded, installed, etc...
 	 *
 	 * @return \TYPO3\CMS\ThemesManager\Interfaces\ThemeInterface[]
 	 */
@@ -51,10 +52,10 @@ abstract class AbstractThemeRepository implements \TYPO3\CMS\ThemesManager\Inter
 	abstract public function findInstalled();
 
 	/**
-	 * Find all downloaded themes on the system regardless if they are installed or not.
+	 * Find all downloaded themes on the system regardless if they are
+	 * installed or not.
 	 *
 	 * @return \TYPO3\CMS\ThemesManager\Interfaces\ThemeInterface[]
 	 */
 	abstract public function findDownloaded();
 }
-?>

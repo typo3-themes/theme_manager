@@ -35,6 +35,7 @@ class ThemeController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
 	/**
 	 * Initialize default action
+	 * @return void
 	 */
 	public function initializeAction() {
 		$this->themeRepository = new \TYPO3\CMS\ThemesManager\Domain\Repository\TerThemeRepository();
@@ -48,7 +49,7 @@ class ThemeController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
 	/**
 	 * @param string $identifier
-	 * @return string
+	 * @return void
 	 */
 	public function downloadAction($identifier) {
 		$theme = $this->themeRepository->findByIdentifier($identifier);
@@ -57,7 +58,7 @@ class ThemeController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 
 	/**
 	 * @param string $identifier
-	 * @return string
+	 * @return void
 	 */
 	public function installAction($identifier) {
 		$theme = $this->themeRepository->findByIdentifier($identifier);

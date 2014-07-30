@@ -31,4 +31,3 @@ class Theme implements \TYPO3\CMS\ThemesManager\Interfaces\ThemeInterface {
 
 	// @todo
 }
-?>

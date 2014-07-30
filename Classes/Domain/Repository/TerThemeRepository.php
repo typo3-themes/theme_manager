@@ -22,7 +22,8 @@ class TerThemeRepository extends AbstractThemeRepository {
 	}
 
 	/**
-	 * Find all themes regardless of their status. Possible status can be downloaded, installed, etc...
+	 * Find all themes regardless of their status. Possible status can be
+	 * downloaded, installed, etc...
 	 *
 	 * @return \TYPO3\CMS\ThemesManager\Interfaces\ThemeInterface[]
 	 */
@@ -40,7 +41,8 @@ class TerThemeRepository extends AbstractThemeRepository {
 	}
 
 	/**
-	 * Find all downloaded themes on the system regardless if they are installed or not.
+	 * Find all downloaded themes on the system regardless if they are
+	 * installed or not.
 	 *
 	 * @return \TYPO3\CMS\ThemesManager\Interfaces\ThemeInterface[]
 	 */

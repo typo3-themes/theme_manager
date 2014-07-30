@@ -51,10 +51,13 @@ class JsonViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
 	/**
 	 * Outputs content with its JSON representation
 	 *
-	 * If $forceObject is TRUE a JSON object is outputted even if the value is a non-associative array
-	 * Example: array('foo', 'bar') as input will not be ["foo","bar"] but {"0":"foo","1":"bar"}
+	 * If $forceObject is TRUE a JSON object is outputted even if the value
+	 * is a non-associative array
+	 * Example:
+	 *    array('foo', 'bar') as input will not be ["foo","bar"]
+	 *    but {"0":"foo","1":"bar"}
 	 *
-	 * @param mixed $value The incoming data to convert, or NULL if VH children should be used
+	 * @param mixed $value The incoming data to convert, or NULL if VH children
 	 * @param boolean $forceObject Outputs an JSON object rather than an array
 	 * @return string the JSON-encoded string.
 	 * @see http://www.php.net/manual/en/function.json-encode.php
@@ -71,4 +74,3 @@ class JsonViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\AbstractViewHelper
 		return json_encode($value, $forceObject ? JSON_FORCE_OBJECT : NULL);
 	}
 }
-?>

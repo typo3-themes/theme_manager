@@ -49,4 +49,3 @@ interface ThumbnailInterface {
 	 */
 	public function setCaption($caption);
 }
-?>

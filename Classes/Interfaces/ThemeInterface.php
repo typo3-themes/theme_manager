@@ -155,4 +155,3 @@ interface ThemeInterface {
 	 */
 	public function setDependencies($dependencies);
 }
-?>

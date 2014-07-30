@@ -49,4 +49,3 @@ interface AuthorInterface {
 	 */
 	public function setEmail($email);
 }
-?>

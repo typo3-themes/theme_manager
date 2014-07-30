@@ -49,4 +49,3 @@ interface LicenseInterface {
 	 */
 	public function setUrl($url);
 }
-?>
