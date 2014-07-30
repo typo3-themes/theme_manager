@@ -9,9 +9,11 @@
 namespace TYPO3\CMS\ThemesManager\Domain\Repository;
 
 /**
- * Will make it possible to search all repos at once, to find Themes independent from source
+ * Will make it possible to search all repos at once,
+ * to find Themes independent from source
  *
  * Class CompoundThemeRepository
+ *
  * @package TYPO3\CMS\ThemesManager\Domain\Repository
  */
 class CompoundThemeRepository extends AbstractThemeRepository{

@@ -85,4 +85,3 @@ class ThemeController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 		$result = $theme->erase();
 	}
 }
-?>
