@@ -22,6 +22,7 @@ before_script:
   - mv typo3_core/* .
   - composer install
   - mkdir -p uploads typo3temp typo3conf/ext
+  - mv theme_manager themes_manager
   - mv themes_manager typo3conf/ext/
 
 script:
