@@ -8,7 +8,13 @@
 
 namespace TYPO3\CMS\ThemesManager\Domain\Repository;
 
-
+/**
+ * Class TerThemeRepository
+ *
+ * Takes care of searching Themes in TER
+ *
+ * @package TYPO3\CMS\ThemesManager\Domain\Repository
+ */
 class TerThemeRepository extends AbstractThemeRepository {
 
 	/**
