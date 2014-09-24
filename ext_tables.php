@@ -15,7 +15,7 @@ if (TYPO3_MODE == 'BE') {
 		),
 		array(
 			'access' => 'user,group',
-			'icon' => 'EXT:themes_manager/ext_icon.gif',
+			'icon' => 'EXT:themes_manager/ext_icon.png',
 			'labels' => 'LLL:EXT:themes_manager/Resources/Private/Language/locallang_module.xlf',
 		)
 	);
