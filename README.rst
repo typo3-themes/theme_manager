@@ -1,5 +1,5 @@
 ========================
-Theme Manager
+OBSOLETE Theme Manager
 ========================
 
 The Theme Manager aims to display a list of themes installable in TYPO3 CMS. A theme is nothing else than a
